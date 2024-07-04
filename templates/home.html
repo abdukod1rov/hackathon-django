@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+
+<h2>Active hackathons</h2>
+<ul>
+    {% for hackathon in active_hackathons %}
+    <li>
+        {{ hackathon.title }}
+    </li>
+    {% endfor %}
+</ul>
+<h2>
+    Past hackathons
+</h2>
+<ul>
+    {% for hackathon in past_hackathons %}
+    <li>
+        {{ hackathon.title }}
+    </li>
+    {% endfor %}
+</ul>
+<h2>
+    Upcoming hackathons
+</h2>
+<ul>
+    {% for hackathon in upcoming_hackathons %}
+    <li>
+        {{ hackathon.title }}
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
